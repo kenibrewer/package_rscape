@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<tool_dependency>
+    <package name="rscape" version="1.1">
+        <install version="1.0">
+            <actions>
+                <action type="download_by_url" sha256sum="d42758779bcc6d91c352636dc1cb7d909658ee1541556a94f9fd8599dd166492">
+                    http://eddylab.org/software/rscape/rscape.tar.gz
+                </action>
+                <action type="autoconf"/>
+                <action type="set_environment">
+                    <environment_variable action="prepend_to" name="PATH">$INSTALL_DIR/bin</environment_variable>
+                </action>
+            </actions>
+        </install>
+        <readme>
+            R-scape is designed to run on POSIX-compatible platforms, including UNIX, Linux and Mac OS/X. . http://eddylab.org/R-scape/
+        </readme>
+    </package>
+</tool_dependency>
